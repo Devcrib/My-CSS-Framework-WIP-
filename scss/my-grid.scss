@@ -1,0 +1,73 @@
+$sm-phone: 320px;
+$mini-tab: 425px;
+$tab: 768px;
+$sm-laptop: 1024px;
+$md-laptop: 1240px;
+$lg-laptop: 1440px;
+
+@mixin createColumns(){
+
+
+        @for $i from 1  through 12{
+            .xs-#{$i}{
+                float: left;
+                width: 8.33% * $i;
+            }
+            .xs-off-#{$i}{
+                margin-left: 8.33% * $i;
+            }
+    }
+
+
+    @media(min-width: $tab){
+        @for $i from 1  through 12{
+            .sm-#{$i}{
+                float: left;
+                width: 8.33% * $i;
+            }
+            .sm-off-#{$i}{
+                margin-left: 8.33% * $i;
+            }
+        }
+    }
+
+    @media(min-width: $sm-laptop){
+        @for $i from 1  through 12{
+            .md-#{$i}{
+                float: left;
+                width: 8.33% * $i;
+            }
+            .md-off-#{$i}{
+                margin-left: 8.33% * $i;
+            }
+        }
+    }
+
+    @media(min-width: $md-laptop){
+        @for $i from 1  through 12{
+            .lg-#{$i}{
+                float: left;
+                width: 8.33% * $i;
+            }
+            .lg-off-#{$i}{
+                margin-left: 8.33% * $i;
+            }
+        }
+    }
+
+    @media(min-width: $lg-laptop){
+        @for $i from 1  through 12{
+            .xlg-#{$i}{
+                float: left;
+                width: 8.33% * $i;
+            }
+            .xlg-off-#{$i}{
+                margin-left: 8.33% * $i;
+            }
+        }
+    }
+
+}
+
+
+@include createColumns();

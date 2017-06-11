@@ -1,0 +1,41 @@
+.show {
+  display: block; }
+
+.hide {
+  display: none; }
+
+.pad-hor {
+  padding-left: 15px;
+  padding-right: 15px; }
+
+pad-ver {
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
+.center-me-type-1 {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.center-me-type-2 {
+  position: relative;
+  height: 100%;
+  width: 100%; }
+  .center-me-type-2 .child {
+    position: absolute;
+    height: auto;
+    width: auto;
+    top: 20%;
+    left: 20%;
+    right: 20%;
+    bottom: 20%; }
+
+center-me-type-3 {
+  display: table; }
+  center-me-type-3 .child {
+    display: table-cell;
+    vertical-align: middle; }
+    center-me-type-3 .child .offspring {
+      width: 100%;
+      padding: auto;
+      margin: auto; }
